@@ -3,12 +3,12 @@ The app supports immediate collaboration through real-time code sharing.
 It enables mentors to observe students' live code adjustments.
 The student has an automatic validation feature, where he can get code feedback.
 
-React + Vite (Client)
-Node.js Express + Socket.io (Server)
-Mongodb (DB)
+### React + Vite (Client)
+### Node.js Express + Socket.io (Server)
+### Mongodb (DB)
 
 ## Link to site
-https://online-coding-web-app-hjs9-git-addingsocket-ofirbachar.vercel.app/
+https://online-coding-web-app-iota.vercel.app/
 [Watch a demo Video](client/src/asserts/demoVideo.mp4)
 
 

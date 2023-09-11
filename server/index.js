@@ -40,7 +40,7 @@ mongoose.connect(uri, {
 .catch((error) => console.log("MongoDB connection failed: " , error.message));
 
 
-const io = new Server ({cors: "http://localhost:5173"});
+const io = new Server ({cors: "https://online-coding-web-app-iota.vercel.app/"});
 
 socketDef(io);
 
