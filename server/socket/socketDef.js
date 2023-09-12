@@ -8,7 +8,6 @@
   
   const socketDef = (io) => {
     io.on("connection", (socket) => {
-        console.log("connection");
     
         socket.on("send-code-block-title", async (initInfo) => {
           if (initInfo.codeBlockTitle) { 
@@ -17,15 +16,10 @@
             }
             userCount[initInfo.codeBlockTitle].add(initInfo.userId);
           }
-          console.log("userCount[initInfo.codeBlockTitle]",userCount[initInfo.codeBlockTitle]);
-          console.log("initInfo.userId",initInfo.userId);
-
           
           socket.join(initInfo.codeBlockTitle);
 
           if(userCount[initInfo.codeBlockTitle]){
-            console.log(initInfo.codeBlockTitle,userCount[initInfo.codeBlockTitle].size);
-
             socket.emit("receive-codeBlock", {
               ...initInfo.codeBlock._doc,
               user: socket.id,
@@ -52,7 +46,6 @@
         });
     
         socket.on("remove-user", (data) => {
-          console.log(`user ${data.userId} deleted`);
           
           if (!userCount[data.codeBlockTitle]) {
             userCount[data.codeBlockTitle] = new Set();
@@ -61,7 +54,7 @@
         });
     
         socket.on("disconnect", () => {
-          console.log("User disconnect");
+
         });
       });
     

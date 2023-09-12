@@ -14,6 +14,6 @@ https://online-coding-web-app-iota.vercel.app/
 
 # Let's start!
 1. Clone the repository: https://github.com/OfirBachar/Online-Coding-Web-App.git
-2. Run the server and client:
-    - Open terminal and navigate to the `client` directory by `cd client` && `npm install` && `npm run dev `.
-    - Open terminal and navigate to the `server` directory by `cd server` && `node index.js`.
+2. Run the server:
+    - Open terminal and navigate to the `server` directory: `cd server` && `node index.js`
+3. Enter the site
