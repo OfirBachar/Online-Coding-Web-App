@@ -75,9 +75,6 @@ const CodeBlock = () => {
 
   const checkCodeblock = () => {
 
-    console.log("code:", codeValue?.toString());
-    console.log("solution", solution?.toString());
-
     if (codeValue?.toString() === solution?.toString()) {
       setRightAnswer(true);
       setWrongAnswer(false);

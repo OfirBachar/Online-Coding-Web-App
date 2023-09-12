@@ -9,7 +9,6 @@ import PropTypes from "prop-types";
 
 
     const updateCodeBlock = (newCodeBlock) => {
-        console.log("newCodeBlock", newCodeBlock)
         setCodeBlock(newCodeBlock);
     }
 
